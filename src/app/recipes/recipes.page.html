@@ -1,0 +1,48 @@
+
+<ion-app>
+  <ion-header>
+    <ion-toolbar >
+      <ion-title >REST API</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+  <h1>All Recipes</h1>
+  
+ <div >
+  <table class="table table-striped ">
+    <thead class="thead-dark">
+      <tr class="table-primary">
+        
+        <th scope="col" >Name</th>
+        <th scope="col">Username</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Website</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr *ngFor='let Recipes of reci'>
+        
+        <td>{{Recipes.name}}</td>
+        <td>{{Recipes.username}}</td>
+        <td>{{Recipes.email}}</td>
+        <td>{{Recipes.phone}}</td>
+        <td>{{Recipes.website}}</td>
+      </tr>
+    
+    </tbody>
+  </table>
+</div>
+  
+
+  </ion-content>
+
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title>Developped by Imed Jadli</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+</ion-app>
